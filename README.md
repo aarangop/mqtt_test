@@ -86,3 +86,25 @@ Then we can compile and install using:
 ```
 cmake --build . --target install
 ```
+
+## Building the project
+
+Building the project is now very straightforward with the provided CMakeLists.txt.
+
+If not present, make a build directory
+```
+mkdir build
+cd build
+```
+
+Then generate the build files and then build the project.
+```
+cmake ..
+cmake --build . --target test
+```
+
+Before running the project don't forget to copy the paho mqtt dlls to the executable's location:
+```
+cp ../lib/paho.mqtt.c/bin/paho-mqtt3a.dll Debug/
+cp ../lib/paho.mqtt.cpp/bin/paho-mqttpp3.dll Debug/
+```
