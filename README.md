@@ -102,9 +102,3 @@ Then generate the build files and then build the project.
 cmake ..
 cmake --build . --target test
 ```
-
-Before running the project don't forget to copy the paho mqtt dlls to the executable's location:
-```
-cp ../lib/paho.mqtt.c/bin/paho-mqtt3a.dll Debug/
-cp ../lib/paho.mqtt.cpp/bin/paho-mqttpp3.dll Debug/
-```
